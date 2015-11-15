@@ -10,4 +10,21 @@
     android:background="@color/layoutBackground"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Add a Profile"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:id="@+id/blanktext"
+        android:layout_alignTop="@+id/listView"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

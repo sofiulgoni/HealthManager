@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="200dp"
+    android:background="#000000"
+    android:id="@+id/popup"
+    android:layout_height="300dp">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Profile Name :"
+        android:id="@+id/profilename"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:focusable="false"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editprofilename"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/profilename"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Add Profile Picture :"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/addprofilepicture"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/editprofilename"
+        android:focusable="false"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/profilepicture"
+        android:background="@color/layoutBackground"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/addprofilepicture"
+        android:focusable="false"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/camera"
+        android:background="@drawable/camera"
+        android:layout_marginLeft="20dp"
+        android:focusable="true"
+        android:layout_alignBottom="@+id/profilepicture"
+        android:layout_toEndOf="@+id/profilepicture" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/file"
+        android:background="@drawable/file"
+        android:layout_alignTop="@+id/camera"
+        android:layout_toEndOf="@+id/camera"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:id="@+id/savebutton"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/layoutBackground"
+        android:layout_below="@+id/profilepicture"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:id="@+id/canccelbutton"
+        android:background="@color/layoutBackground"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignTop="@+id/savebutton"
+        android:layout_alignEnd="@+id/file" />
+</RelativeLayout>
