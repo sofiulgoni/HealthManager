@@ -31,12 +31,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        blanktext=(TextView)findViewById(R.id.blanktext);
         listView=(ListView)findViewById(R.id.listView);
-        if (listView==null){
-            blanktext.setVisibility(View.VISIBLE);
-        }else if (listView!=null){
-            blanktext.setVisibility(View.GONE);
-        }
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
